@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>물음에 답하시오.</title>
+</head>
+<body>
+    <h1>연인을 고르는 기준</h1>
+    <p>중복선택도 가능하니 해당하는 항목에 선택해주세요.</p>
+    <br>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+                <label for="sex">성별</label>
+                <br>
+                    <input type="radio" value="fem">여성
+                    <input type="radio" value="mel">남성
+                <br>
+                <br>
+                <label for="age">연령대</label>
+                <br>
+                <input type="radio" value="one">10대
+                <input type="radio" value="two">20대
+                <input type="radio" value="thr">30대
+                <input type="radio" value="fou">40대
+                <input type="radio" value="fiv">50대
+                <input type="radio" value="six">60대
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>개인정보 제공</legend>
+                <b><p>개인정보 동의하시는 분들에 한해서 소정의 상품을 드릴 예정입니다.</p></b>
+                <input type="radio" value="yes"> 동의함
+                <br>
+                <input type="radio" value="no"> 동의하지 않음
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>외형/내면</legend>
+            <ol>
+                <li> 키
+                    <br>
+                    <label class="statur" for="min">최소</label>
+                    <input type="number" id="min">
+                    <label class="statur" for="max">최대</label>
+                    <input type="number" id="max">
+                </li>
+                <br>
+                <br>
+                <li> 외모
+                    <input type="number" id="figure" value="0" min="0" max="10" step="1">
+                    <br>
+                    <input type="range" id="appearance" value="0" min="0" max="10">
+                </li>
+                <br>
+                <br>
+                <li>성격
+                    <br>
+                    <br>
+                    <textarea name="personality" cols="60" rows="5"></textarea>
+                </li>
+            </ol>
+        </fieldset>
+    </form>   
+    <hr>
+    <form>
+        <fieldset>
+            <legend><b>여러분의 다양한 의견을 적극 수렴하겠습니다.</b></legend>
+            <br>
+            <label for="satisfaction">만족도</label>
+            <br>
+            <br>
+            <input type="radio" value="one">1
+            <input type="radio" value="two">2
+            <input type="radio" value="thr">3
+            <input type="radio" value="fou">4
+            <input type="radio" value="fiv">5
+            <br>
+            <br>
+            <textarea name="comment" cols="60" rows="5"></textarea>
+        </fieldset>
+    </form>
+    <p></p>
+    <form>
+        <input type="button" value="제출하기">
+    </form>
+</body>
+</html>
